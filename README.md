@@ -1,0 +1,1 @@
+# django-celery-result-signal-example
