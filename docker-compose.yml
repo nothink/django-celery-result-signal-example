@@ -1,0 +1,24 @@
+version: '3.9'
+
+services:
+  django:
+    container_name: django
+    build:
+      context: .
+      target: django
+    image: django
+    ports:
+      - 8000:8000
+    volumes:
+      - .:/app
+
+  celery:
+    container_name: celery
+    build:
+      context: .
+      target: celery
+    image: celery
+
+  rabbitmq:
+    container_name: rabbitmq
+    image: rabbitmq:3-alpine

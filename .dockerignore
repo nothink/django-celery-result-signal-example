@@ -1,0 +1,7 @@
+Dockerfile 
+LICENSE 
+README.md
+
+__pycache__
+
+docker-compose.yml
